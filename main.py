@@ -35,6 +35,6 @@ for i in dict_data:
         # send email
         connection=smtplib.SMTP("smtp.gmail.com",587)
         connection.starttls()
-        connection.login(MY_EMAIL,password="kylfgtqwnajtshbr")
+        connection.login(MY_EMAIL,password=MY_PASSWORD)
         connection.sendmail(from_addr=MY_EMAIL,to_addrs=i["email"],msg=f"subject:hello\n\n{data}")
         connection.close()
