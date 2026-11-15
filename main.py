@@ -1,7 +1,6 @@
 import datetime as dt
 import pandas
 import smtplib
-import random
 import os
 
 # import os and use it to get the Github repository secrets
@@ -24,7 +23,7 @@ for i in dict_data:
 
     if i["day"]==current_day and i["month"]==month:
         # reed file letter and preparation message
-        with open(f"letter_templates/letter_{random.randint(1,3)}.txt", "r") as f:
+        with open("letter_templates/letter_3".txt", "r") as f:
             # data = f.readlines()
             # data[0] = "Dear " + i["name"]\
 
