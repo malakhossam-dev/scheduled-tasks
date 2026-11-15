@@ -24,9 +24,6 @@ for i in dict_data:
     if i["day"]==current_day and i["month"]==month:
         # reed file letter and preparation message
         with open("letter_templates/letter_3".txt", "r") as f:
-            # data = f.readlines()
-            # data[0] = "Dear " + i["name"]\
-
             data=f.read()
             data=data.replace("[NAME]",i["name"])
             print(data)
